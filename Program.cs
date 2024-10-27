@@ -4,4 +4,3 @@ using DbSeeder;
 
 var dbContext = new CompanyDbContext();
 
-var 
