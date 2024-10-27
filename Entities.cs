@@ -27,7 +27,6 @@ public class Return
     public Guid Id { get; set; }
     public ReturnStatus Status { get; set; }
     public Guid ProductId { get; set; }
-    public Product Product { get; set; }
     public decimal CompanyCost { get; set; }
     public required DateTime ProcessingStarted { get; set; }
     public required DateTime ProcessingFinished { get; set; }
@@ -61,5 +60,6 @@ public class Product
     public required string Name { get; set; }
     public DateTime IssueYear { get; set; } 
     public required string MainBuildingMaterial { get; set; }
+    public List<Return> Returns { get; set; } = [];
 }
 
